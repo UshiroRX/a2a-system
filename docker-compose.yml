@@ -1,0 +1,22 @@
+services:
+  llamaindex:
+    build: ./agents/llamaindex_agent
+    container_name: llamaindex_agent
+    ports:
+      - "8001:8000"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+
+  langchain:
+    build: ./agents/langchain_agent
+    container_name: langchain_agent
+    ports:
+      - "8000:8000"
+    depends_on:
+      - llamaindex
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app

@@ -1,0 +1,56 @@
+# 💻 Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.env.*
+
+# 📦 Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# 📦 Pipenv
+Pipfile.lock
+poetry.lock
+
+# 🐳 Docker
+*.log
+*.pid
+*.tar
+docker-compose.override.yml
+
+# 🧪 Unit test / coverage
+htmlcov/
+coverage.*
+.cache
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# 📄 VS Code
+.vscode/
+.idea/
+
+# 🧱 Build
+build/
+dist/
+*.egg
+.eggs/
+
+# 📂 LlamaIndex Index storage
+storage/
+index/
+
+# 📥 Data
+agents/**/data/
+agents/**/outputs/
+agents/**/uploads/
+
+# ⚙️ OS Files
+.DS_Store
+Thumbs.db

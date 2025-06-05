@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+llama-index
+requests
+python-dotenv
+PyMuPDF  # если обрабатываешь PDF
