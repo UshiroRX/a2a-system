@@ -43,6 +43,10 @@ cd a2a-system
 ### 2. Создать .env
 OPENAI_API_KEY=sk-...
 ### 3. Добавить файл в llamaindex_agent/data/ (например, nginx.pdf)
+Затем запустить команду для создания векторной базы вашего документа
+```bash
+python3 index_builder.py 
+```
 ### 4. Запустить
 docker compose up --build
 
